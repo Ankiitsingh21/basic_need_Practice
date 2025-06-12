@@ -2,6 +2,10 @@ const express = require( "express");
 
 const app = express();
 
+const cors= require("cors");
+
+app.use(cors());
+
 app.get("/hello",(req,res) =>{
     const a = req.query.a;
     const b= req.query.b;
